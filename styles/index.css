@@ -171,7 +171,7 @@ canvas{
   float: left
 }
 .top-line button{
-  background-color: white;
+  background-color: #f0f0f0;
   border:none;
   box-shadow: none;
   display: block;
