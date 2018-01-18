@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" href="styles/index.css">
+	<title>Graphics</title>
+</head>
+<body>
+    <p></p>
+    <br>
+    <div class="top-line">
+            <input id="size" type="number" name="size" value="50" min="10" max="100" step="10">
+            <button id="points" style="background-image: url(img/two-dots.svg)"></button>
+            <button id="line" style="background-image: url(img/line.svg)"></button>
+            <button id="closed-line" style="background-image: url(img/clfig.svg)"></button>
+    </div>
+    <div class="bottom-line">
+            <div class="icon-frame" style="background-image: url(img/play.svg)"></div>
+            <ul id="frames" class="frames">
+                <li>1</li>
+            </ul>
+            <button id="add-frame" class="add-frame">+</button>
+            <div class="icon-frame" style="background-image: url(img/stop.svg)"></div>
+    </div>
+    <div class="left-line">
+        <button id="draw-button" class="tool-button" style="background-image: url(img/edit.svg)"></button>
+        <button id="move-button" class="tool-button" style="background-image: url(img/move-hand.svg)"></button>
+        <button id="clone-button" class="tool-button" style="background-image: url(img/copy.svg)"></button>
+        <button id="delete-button" class="tool-button" style="background-image: url(img/knife.svg)"></button>
+        <ul class="colors">
+            <li class="active" style="background-color: black" data-color="black"></li>
+            <li style="background-color: #FF7300" data-color="#FF7300"></li>
+            <li style="background-color: #00FF4C" data-color="#00FF4C"></li>
+            <li style="background-color: #3FF0F0" data-color="#3FF0F0"></li>
+        </li>
+    </div>
+    <div class="right-line">
+        <div class="icon" style="background-image: url(img/shapes.svg)"></div>
+        <ul id="layers" class="layers">
+           
+        </ul>
+        
+        <button id="figure" class="new-figure">+</button>
+    </div>
+    
+   
+    <canvas id="canvas" width="2000" height="1000" style="cursor:crosshair;background:white"></canvas>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
